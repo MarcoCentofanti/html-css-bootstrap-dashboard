@@ -25,13 +25,16 @@
     </ul>
   </div>
     </nav>
-      <section class="mx-3">
-        <section class="d-flex justify-content-between mb-4">
+    <div class="container">
+      <section class="mx-3 row">
+        <!-- header e bottone -->
+        <section class="col-12 col-lg-8 d-flex justify-content-between mb-4">
           <h1 class="ms-3 mt-3 fw-light">Catalogo Libri</h1>
-          <button class="btn btn-primary me-3 mt-3">Aggiungi Libro</button>  
+          <button class="btn btn-primary me-3 mt-3">Aggiungi Libro</button>
         </section>
-        <div>
-          <table class="table table-striped mx-1">
+        <!-- Table -->
+        <div class="col-12 col-xl-8 ">
+        <table class="table table-striped mx-1">
             <thead class="container">
               <tr class="row">
                 <th class="col-6 col-md-6" scope="col">Titolo</th>
@@ -184,7 +187,7 @@
 
 
               <tr class="row">
-                <td class="col-6 col-md-6">Il piccolo principe</td>
+                <td class="col-6 col-xl-6">Il piccolo principe</td>
                 <td class="d-none d-md-block col-md-2">-</td>
                 <td class="col-3 col-md-2"><span class="badge bg-success">Disponibile</span></td>
                 <td class="col-3 col-md-2">
@@ -196,7 +199,7 @@
                   </button>
                 </td>
               <tr class="row">
-                <td class="col-6 col-md-6">La storia infinita</td>
+                <td class="col-6 col-xl-6">La storia infinita</td>
                 <td class="d-none d-md-block col-md-2">-</td>
                 <td class="col-3 col-md-2"><span class="badge bg-success">Disponibile</span></td>
                 <td class="col-3 col-md-2">
@@ -209,16 +212,18 @@
                 </td>
               </tr>
             </tbody>
-          </table>
+        </table>
         </div>
-        <section id="to-do-list" class="container mb-5">
+        <!-- to do -->
+        <div class="d-flex flex-column col-12 col-lg-4">
+        <section id="to-do-list" class="mb-5 mb-lg-2 ms-lg-4">
           <div class="card  ">
             <div class="card-header fs-3 ">
               Todo
             </div> 
             <div class="">
-              <div class="card m-3">
-                <ul class="list-group list-group-flush">
+              <div class="card m-1 ">
+                <ul class="list-group list-group-flush ">
                   <li class="list-group-item">
                     <div class="form-check">
                       <input type="checkbox" value="" class="form-check-input">
@@ -243,7 +248,8 @@
             </div>
           </div>
         </section>
-        <section id="FAQ mb-5">
+        <!-- FAQ -->
+        <section id="FAQ mb-5" class="ms-lg-4">
           <div class="card m-3 ">
             <div class="card-header fs-3 ">
               F.A.Q.
@@ -288,7 +294,9 @@
           </div>
         </div>
         </section>
+        </div>
       </section>
+      </div>
   </main>
 
 
