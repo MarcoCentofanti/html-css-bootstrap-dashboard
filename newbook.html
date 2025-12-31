@@ -23,16 +23,63 @@
       <li class="nav-item text-secondary me-3">Storico Prestiti</li>
       <li class="nav-item text-secondary me-3">Help</li>
     </ul>
-    <main>
-      <div class="container">
-
-        <h1>Nuovolibro</h1>
-      </div>
-    </main>
-   
   </div>
     </nav>
     </header>
+
+    <main >
+      <div class="container p-0">
+        <h1 class="row">Nuovo Libro</h1>
+        <form class="">
+          <div class="row">
+            <div class="mb-3 col-6">
+              <label for="nomeAutore" class="form-label">Nome Autore</label>
+              <input type="name" class="form-control" id="nomeAutore" aria-describedby="nomeAutore" placeholder="Inserisci il nome dell'autore">
+            </div>
+            <div class="mb-3 col-6">
+              <label for="conomeAutore" class="form-label">Cognome Autore</label>
+              <input type="surname" class="form-control" id="conomeAutore" placeholder="Inserisci il cognome dell'autore">
+            </div>
+          </div>
+              <div class="mb-3">
+                <label for="titolo" class="form-label">Titolo</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserisci il titolo del libro">
+              <div id="emailHelp" class="form-text">Titolo versione italiana</div>
+          </div>
+          <div class="mb-3">
+                <label for="genereSelect" class="form-label">Genere</label>
+                <select id="genereSelect" class="form-select">
+                    <option>Scegli il genere</option>
+                    <option>Fantasy</option>
+                    <option>Storia</option>
+                    <option>Sci-fi</option>
+                    <option>Romanzo</option>
+                </select>
+                </div>
+            <div class="mb-3">
+                <label for="annoPubblicazione" class="form-label">Anno di Pubblicazione</label>
+                <input type="number" class="form-control" id="annoPubblicazione" aria-describedby="annoPublicazionelHelp" placeholder="Inserisci l'anno">
+              <div id="emailHelp" class="form-text">Titolo versione italiana</div>
+            </div>
+            <div class="mb-4">
+                <label for="annoPubblicazione" class="form-label">ISBN#</label>
+                <input type="number" class="form-control" id="isbn" aria-describedby="ISBNHelp" placeholder="Inserisci il codice ISBN#">
+            </div>
+            <hr class="mb-4">
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Inserisci eventuali note sul Libro"></textarea>
+            </div>
+          
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+        </form>
+      </div>
+      </div>
+    </main>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
